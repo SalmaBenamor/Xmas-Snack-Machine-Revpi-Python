@@ -13,7 +13,7 @@ import revpimodio2
 import time
 
 from playsound import playsound
-playsound('jingle-bells.mp3')
+playsound('//home//pi//Xmas-Snack-Machine-Revpi-Python//jingle-bells.mp3')
 
 rpi = revpimodio2.RevPiModIO(autorefresh=True)
 
