@@ -12,11 +12,11 @@
 import revpimodio2
 import time
 
-import vlc
+#import vlc
  
-media = vlc.MediaPlayer("jingle-bells.mp3")
+#media = vlc.MediaPlayer("jingle-bells.mp3")
  
-media.play()
+#media.play()
 
 
 def play_2():
@@ -28,7 +28,7 @@ def play_2():
 def pause_2():
     time.sleep(0.2)
 
-
+ 
 def pause_4():
     time.sleep(0.4)
 
