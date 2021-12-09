@@ -12,10 +12,11 @@
 import revpimodio2
 import time
 
-from playsound import playsound
-playsound('//home//pi//Xmas-Snack-Machine-Revpi-Python//jingle-bells.mp3')
-
-rpi = revpimodio2.RevPiModIO(autorefresh=True)
+import vlc
+ 
+media = vlc.MediaPlayer("jingle-bells.mp3")
+ 
+media.play()
 
 
 def play_2():
