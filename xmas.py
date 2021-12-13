@@ -40,86 +40,11 @@ def play_1():
     rpi1.io.O_1.value = 0
     time.sleep(0.3)
 
-def play_2():
-    rpi2.io.O_2.value = 1
-    time.sleep(0.3)
-    rpi2.io.O_2.value = 0
-    time.sleep(0.3)
-
-def play_3():
-    rpi3.io.O_3.value = 1
-    time.sleep(0.3)
-    rpi3.io.O_3.value = 0
-    time.sleep(0.3)
-
-def play_4():
-    rpi4.io.O_4.value = 1
-    time.sleep(0.3)
-    rpi4.io.O_4.value = 0
-    time.sleep(0.3)
-
-def play_5():
-    rpi5.io.O_5.value = 1
-    time.sleep(0.3)
-    rpi5.io.O_5.value = 0
-    time.sleep(0.3)
-
-def play_6():
-    rpi6.io.O_6.value = 1
-    time.sleep(0.3)
-    rpi6.io.O_6.value = 0
-    time.sleep(0.3)
-
-def play_7():
-    rpi7.io.O_7.value = 1
-    time.sleep(0.3)
-    rpi7.io.O_7.value = 0
-    time.sleep(0.3)
-
-def play_8():
-    rpi8.io.O_8.value = 1
-    time.sleep(0.3)
-    rpi8.io.O_8.value = 0
-    time.sleep(0.3)
-
-def play_9():
-    rpi9.io.O_9.value = 1
-    time.sleep(0.3)
-    rpi9.io.O_9.value = 0
-    time.sleep(0.3)
-
-def play_10():
-    rpi10.io.O_10.value = 1
-    time.sleep(0.3)
-    rpi10.io.O_10.value = 0
-    time.sleep(0.3)
-
-def play_11():
-    rpi11.io.O_11.value = 1
-    time.sleep(0.3)
-    rpi11.io.O_11.value = 0
-    time.sleep(0.3)
-
-def play_12():
-    rpi12.io.O_12.value = 1
-    time.sleep(0.3)
-    rpi12.io.O_12.value = 0
-    time.sleep(0.3)
-
-def play_2(AllPins):
-    rpi.io.O_1.value = 1
-    time.sleep(0.1)
-    rpi.io.O_1.value = 0
-    time.sleep(0.1)
-
 def pause_2():
     time.sleep(0.2)
 
-
 def pause_4():
     time.sleep(0.4)
-
-
 
 #Jingle
 play_1()
@@ -166,8 +91,6 @@ play_11()
 play_12()
 pause_2()
 
-#All
-play_2()
 
 #it  
 play_5()
@@ -210,18 +133,3 @@ pause_2()
 play_3()
 play_4()
 pause_4()
-
-
-if __name__ == '__main__':
-    Thread(target = play_1).start()
-    Thread(target = play_2).start()
-    Thread(target = play_3).start()
-    Thread(target = play_4).start()
-    Thread(target = play_5).start()
-    Thread(target = play_6).start()
-    Thread(target = play_7).start()
-    Thread(target = play_8).start()
-    Thread(target = play_9).start()
-    Thread(target = play_10).start()
-    Thread(target = play_11).start()
-    Thread(target = play_12).start()
