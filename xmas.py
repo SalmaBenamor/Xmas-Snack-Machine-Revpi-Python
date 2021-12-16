@@ -12,21 +12,24 @@
 import revpimodio2
 import time
 
-
 #from playsound import playsound
 #playsound("//home//pi//Xmas-Snack-Machine-Revpi-Python//jingle-bells.mp3")
 
-
-
 rpi = revpimodio2.RevPiModIO(autorefresh=True)
 
-
 #play 1/4 note
-def play_4(io):
-    exec("rpi.io.O_" + str(io) + ".value = 1")  
-    time.sleep(0.3)
+def play_4(ios):
+    if(isinstance(ios,int)):
+        play_single_io(ios,0.3)
+    else:
+        for io in ios:
+            play_single_io(io,0.3)
+
+def play_single_io(io, pause):
+    exec("rpi.io.O_" + str(io) + ".value = 1")
+    time.sleep(pause)
     exec("rpi.io.O_" + str(io) + ".value = 0")  
-    time.sleep(0.3)
+    time.sleep(pause)
 
 
 def pause_2():
@@ -37,6 +40,8 @@ def pause_4():
 
 #Jingle
 play_4(1)
+play_4([1,12])
+
 play_4(2)
 #Bells
 play_4(4)
